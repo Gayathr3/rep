@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    <title>mouse over</title>
+</head>
+
+<body>
+    <img id="img" name="img"
+        src="https://t4.ftcdn.net/jpg/05/62/99/31/360_F_562993122_e7pGkeY8yMfXJcRmclsoIjtOoVDDgIlh.jpg"
+        alt=""
+		height="500px" width="500px">
+    <p id="txt" name="txt">stylish cats wear sunglasses
+    </p>
+
+    <script>
+        let img = document.getElementById("img")
+        let txt = document.getElementById("txt")
+
+        img.addEventListener("mouseover", () => {
+            document.img.src = "https://t4.ftcdn.net/jpg/05/62/99/31/360_F_562993122_e7pGkeY8yMfXJcRmclsoIjtOoVDDgIlh.jpg"
+        })
+        img.addEventListener("mouseout", () => {
+            document.img.src = "https://hips.hearstapps.com/hmg-prod/images/cat-puns-64ef515f6036a.jpg?crop=1xw:0.8423586572438162xh;center,top&resize=1200:*"
+        })
+
+        txt.addEventListener("mouseover", () => {
+            document.getElementById("txt").innerHTML = "cats are loyal pet animal with full of love."
+        })
+        txt.addEventListener("mouseout", () => {
+            document.getElementById("txt").innerHTML = "smiling cats are rare to see we can see on internet"
+        })
+
+    </script>
+</body>
+
+</html>
